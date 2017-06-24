@@ -1,23 +1,12 @@
-<SCRIPT LANGUAGE="javascript">
-
-var password = prompt("請輸入密碼","")
-if (password=="123")
+<SCRIPT LANGUAGE="Javascript">
+<!--
+var Words ="%3CSCRIPT%20LANGUAGE%3D%22JavaScript%22%3E%0A%0Avar%20password%20%3D%20%27%27%0Apassword%3Dprompt%28%27%u8F38%u5165%u5BC6%u78BC%3A%27%2C%27%27%29%3B%0Aif%20%28password%20%21%3D%20null%29%20%7B%0Alocation.href%3D%20password%20+%20%22blog/index.html%22%3B%0A%7D%0A%0A%3C/SCRIPT%3E "   //請將上面轉好的程式碼放入此雙引號" "內
+function SetNewWords()
 {
-alert('Welcome!')
-location.href='blog/index.html'
-}
-else
-{
-if (password=="null")
-{
-alert('請再輸入一次密碼');
-location.href='index.html';
-}
-else
-if (password!="123")
-{
-alert('請再輸入一次密碼');
-location.href='5.html';
-}
-}
-</SCRIPT> 
+var NewWords;
+NewWords = unescape(Words);
+document.write(NewWords);
+} 
+SetNewWords();
+-->
+</SCRIPT>
